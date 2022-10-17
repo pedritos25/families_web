@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Web de Familiares</title>
+</head>
+
+<body>
+<h1>Web de Familiares!!!</h1>
+<h2>Familiares: {{ families }} </h2>
+{% if familiares %}
+<ul>
+    {% for familia in familiares %}
+    <li> <b> NOMBRE: </b>{{ familia.nombre }}<b> APELLIDO: </b> {{ familia.apellido }}<b> EDAD: </b> {{ familia.edad }}<b> FECHA DE REGISTRO: </b>{{ familia.fecha_registro }}</li> </p>
+    {% endfor %}
+</ul>
+{% endif %}
+</body>
+</html>
